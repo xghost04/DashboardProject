@@ -1,20 +1,20 @@
 const Orders = [
 
      {
-        productName: 'JavaScript Tutorial',
-        productNumber: '85743',
+        productName: 'BMW 320',
+        productNumber: '99000',
         paymentStatus: 'Due',
         status: 'Pending'
      },
      {
-        productName: 'CSS Full Copurse',
-        productNumber: '97245',
+        productName: 'Mercedes cla 220d',
+        productNumber: '99001',
         paymentStatus: 'Refunded',
         status: 'Declined'
      },
      {
-        productName: 'Flex-Box Tutorial',
-        productNumber: '36452',
+        productName: 'Ranger Rover Velar',
+        productNumber: '99002',
         paymentStatus: 'Paid',
         status: 'Active'
      },
