@@ -109,9 +109,9 @@ body{
     width: 100%;
     padding: 0 16px;
     border-radius: 1.25rem;
-    background: var(--color-success);
-    color: var(--color-white);
-    border: 0;
+    background: var(--color-primary);
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 600;
