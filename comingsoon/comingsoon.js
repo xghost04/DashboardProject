@@ -3,27 +3,29 @@ function toggle(){
     newsletter.classList.toggle('active');
 }
 
-var countDate = new Date('jan 1, 2024 00:00:00').getTime();
-function newYear(){
-    var now = new Date() .getTime();
-    gap = countDate - now
-    
-    var second = 1000;
-    var minute = second * 60;
-    var hour = minute * 60;
-    var day = hour * 24;
+document.addEventListener("DOMContentLoaded", function () {
+    // Countdown Timer
+    const countdownDate = new Date("2023-12-31T00:00:00").getTime(); // Set your target date and time here
+    const countdown = document.querySelector(".countdown");
 
-    var d = Math.floor(gap / (day));
-    var h = Math.floor((gap % (day)) / (hour));
-    var m = Math.floor((gap % (hour)) / (minute));
-    var s = Math.floor((gap % (minute)) / second);
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
 
-    document.getElementById('day').innerText = d;
-    document.getElementById('hour').innerText = h;
-    document.getElementById('minute').innerText = m;
-    document.getElementById('second').innerText = s;
-} 
+        if (distance > 0) {
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-setInterval(function(){
-    newYear();
-},1000)
+            document.getElementById("day").innerText = days;
+            document.getElementById("hour").innerText = hours;
+            document.getElementById("minute").innerText = minutes;
+            document.getElementById("second").innerText = seconds;
+        } else {
+            countdown.style.display = "none";
+        }
+    }
+
+    setInterval(updateCountdown, 1000);
+});
