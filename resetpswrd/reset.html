@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="stylelogin.css">
-    <title>Login | DagonProg</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Forget Password | DagonProg</title>
 </head>
 <body>
     
-    <div class="login-card">
-        <h2>Login</h2>
-        <h3>Enter your credentials</h3>
+    <div class="reset-card">
+        <h2>You Forget <br>Your Password?</h2>
+        <h3>You will receive a reset-password link in you e-mail.</h3>
 
-        <form class="login-form">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <a href="../resetpswrd/reset.html">Forget your password?</a>
+        <form class="reset-form">
+            <input type="email" placeholder="Mail">
+            
+            <a href="../login/login.html">Login</a>
             <a href="../signup/sign.html">Sign up</a>
-            <button onclick="myFunction()">LOGIN</button>
+            <a href="../home/home.html">Back to Home Page</a>
+            <button onclick="myFunction()">Submit</button>
         </form>
     </div>
 
@@ -43,7 +44,7 @@
     </div>
     <!-- End of Nav-->
 
-    <script src="login.js"></script>
+    <script src="reset.js"></script>
     
 </body>
 </html>

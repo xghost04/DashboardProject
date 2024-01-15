@@ -1,89 +1,258 @@
-/* Reset some default styles for better cross-browser consistency */
-body, h1, h2, p, ul, li {
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@800&family=Sarabun:wght@100&display=swap');
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Apply a background color and text color to the body */
-body {
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: Arial, sans-serif;
+body{
+    background: #312747;
 }
 
-/* Style the header section */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
-/* Style the navigation menu */
-nav ul {
+header .logo{
+    position: relative;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav{
+    position: relative;
+}
+
+header nav ul{
+    position:relative;
+    display: flex;
+}
+
+header nav ul li{
     list-style: none;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+header nav ul li a{
     color: #fff;
-    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-/* Style the user profile section */
-.user-profile {
+header nav ul li a:hover{
+    color: #ff0083;
+}
+
+section{
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    min-height: 0vh;
+    padding: 0 200px;
 }
 
-.user-profile img {
+section .contentBx{
+    position: relative;
+    max-width: 600px;
+    z-index: 1000;
+}
+
+section .contentBx h2{
+    font-size: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+section .contentBx p{
+    font-size: 18px;
+    color: #fff;
+}
+
+section .contentBx a{
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    background: #ff0083;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.imgBX img{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+section .sci{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+}
+
+section .sci li{
+    list-style: none;
+}
+
+section .sci li a{
+    display: block;
+    margin-right: 20px;
+    transform: scale(0.8);
+}
+
+.newsletter{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 60px;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.newsletter.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.newsletter h2{
+    font-size: 48px;
+    color: #312747;
+}
+
+.newsletter p{
+    font-size: 20px;
+    color: #312747;
+}
+
+.newsletter .inputBox{
+    margin-top: 20px;
+}
+
+.newsletter .inputBox input{
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid #999;
+}
+
+.newsletter .inputBox input[type="submit"]{
+    padding: 10px;
+    outline: none;
+    width: 140px;
+    color: #fff;
+    background: #ff0083;
+    border: 1px solid #ff0083;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.newsletter .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+    cursor: pointer;
 }
 
-/* Style the main content */
-main {
-    padding: 20px;
-}
-
-/* Style the welcome section */
-.welcome-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Style the dashboard widgets */
-.dashboard-widgets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.dashboard-widgets .widget {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: calc(33.33% - 20px); /* Adjust the width based on your layout */
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Style the footer */
+/* Styling the footer */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: #fff;
-    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling links in the footer */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+@media (max-width: 991px){
+    section{
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+    section .contentBx{
+        max-width: 100%;
+    }
+    section .imgBX img{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    header{
+        padding: 20px 50px;
+    }
+    section{
+        flex-direction: column;
+        padding-top: 150px 20px 50px;
+        height: auto;
+    }
+    section .contentBx h2{
+        font-size: 40px;
+    }
+    section .contentBx p{
+        font-size: 16px;
+    }
+    section .contentBx a{
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        background: #ff0083;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 40px;
+    }
+    section .sci{
+        left: 50px;
+    }
+    .newsletter {
+        width: 90%;
+        padding: 30px;
+    }
+    .newsletter .inputBox input{
+        margin-top: 10px;
+        width: 100%;
+    }
 }

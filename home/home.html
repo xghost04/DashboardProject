@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Dragon Home Page</title>
     <link rel="stylesheet" href="homestyle.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Dashboard Logo</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
-        <div class="user-profile">
-            <img src="user-avatar.png" alt="User Avatar">
-            <span>John Doe</span>
-            <a href="#">Log Out</a>
-        </div>
+        <a href="home.html" class="logo">Dragon Fund</a>
+            <nav>
+                <ul>
+                    <li><a href="../error/error.html">Sign up</a></li>
+                </ul>
+            </nav>
     </header>
     
-    <main>
-        <section class="welcome-section">
-            <h1>Welcome to Your Dashboard</h1>
-            <p>Here, you can access and manage various features and data.</p>
+    <section>
+        <div class="contentBx">
+            <h2>INSTANT FUNDING</h2>
+            <p>Now we're working on this website. Thanks for your understanding. Don't forget to hit the Notication Button down bellow.</p>
+            <a href="#" onclick="toggle();">Notify Me!</a>
+        </div>
+            <div class="imgbox">
+                <img src="../images/dragon.png">
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="../image/facebook.png"></a></li>
+                <li><a href="#"><img src="../image/twitter.png"></a></li>
+                <li><a href="#"><img src="../image/instagram.png"></a></li>
+            </ul>
         </section>
-        
-        <section class="dashboard-widgets">
-            <div class="widget">
-                <h2>Widget 1</h2>
-                <p>Widget 1 content goes here.</p>
+         
+        <div class="newsletter">
+            <h2>Join us NOW!</h2>
+            <p>And get the chance to win 10.000$ funded account!</p>
+            <div class="inputBox">
+                <form>
+                    <input type="email" placeholder="Enter Email Address">
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-            <div class="widget">
-                <h2>Widget 2</h2>
-                <p>Widget 2 content goes here.</p>
-            </div>
-            <div class="widget">
-                <h2>Widget 3</h2>
-                <p>Widget 3 content goes here.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Your Dashboard Company</p>
-    </footer>
+            <img src="../image/close.png" class="close" onclick="toggle();">
+        </div>
+        <footer>
+            <p>&copy; 2024 Licence | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+          </footer>
     <script src="homejs.js"></script>
 </body>
 </html>

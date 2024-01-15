@@ -5,7 +5,7 @@ function toggle(){
 
 document.addEventListener("DOMContentLoaded", function () {
     // Countdown Timer
-    const countdownDate = new Date("2023-12-31T00:00:00").getTime(); // Set your target date and time here
+    const countdownDate = new Date("2024-12-31T00:00:00").getTime(); // Set your target date and time here
     const countdown = document.querySelector(".countdown");
 
     function updateCountdown() {
