@@ -7,5 +7,5 @@ darkMode.addEventListener('click', () => {
 })
 
 function myFunction() {
-    location.replace("https://www.w3schools.com")
+    location.replace(" ")
   }
