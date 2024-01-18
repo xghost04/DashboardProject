@@ -11,7 +11,7 @@
     --color-dark: #363949;
     --color-light: rgba(132, 139, 200, 0.18);
     --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
+    --color-background: #312747;
 
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
@@ -86,12 +86,9 @@ body{
     gap: 16px;
 }
 
-.login-form > input, .login-form > button{
+.login-form > input{
     width: 100%;
     height: 50px;
-}
-
-.login-form > input {
     border: 2px solid var(--color-primary);
     font-family: inherit;
     font-size: 15px;
@@ -104,23 +101,27 @@ body{
     border: 2px solid var(--color-primary);
 }
 
-.login-form > button{
+.login-form > ul a{
     cursor: pointer;
-    width: 100%;
-    padding: 0 16px;
-    border-radius: 1.25rem;
-    background: var(--color-primary);
-    color: var(--color-dark);
+    width: 90%;
+    padding: 15px 16px;
     border: 2px solid var(--color-dark);
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
     font-weight: 600;
     text-align: center;
     letter-spacing: 2px;
     transition: all 0.375s;
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    background: #ff0083;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 40px;
 }
 
-.login-form > button:hover{
+.login-form > ul a:hover{
     background: var(--color-success);
 }
 
@@ -143,7 +144,7 @@ body{
     gap: 2rem;
 }
 
-.right-section .nav button{
+.right-section .nav ul a{
     display: none;
 }
 
@@ -181,4 +182,60 @@ body{
         margin: 0;
         width: 400px;
     }
+}
+
+.newsletter{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 60px;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.newsletter.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.newsletter h2{
+    font-size: 48px;
+    color: #312747;
+}
+
+.newsletter p{
+    font-size: 20px;
+    color: #312747;
+}
+
+.inputBox a{
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    background: #ff0083;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.inputBox a:hover{
+    color: #654e84;
+}
+
+.newsletter .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }

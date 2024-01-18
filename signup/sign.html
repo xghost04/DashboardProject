@@ -19,18 +19,13 @@
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Password">
             <a href="../login/login.html">Alredy have an account?</a>
-            <button type="submit">SIGNUP</button>
+            <ul><a onclick="toggle();">Sign Up</a></ul>
         </form>
     </div>
 
     <!-- RIGHT SECTION-->
     <div class="right-section">
         <div class="nav">
-            <button id="menu-btn">
-                <span class="material-icons-sharp">
-                    menu
-                </span>
-            </button>
             <div class="dark-mode">
                 <span class="material-icons-sharp active">
                     light_mode
@@ -43,7 +38,19 @@
     </div>
     <!-- End of Nav-->
 
+    <div class="newsletter">
+        <h2>Welcome</h2>
+        <p>Now you can open your account!</p>
+        <div class="inputBox">
+            <form>
+                <a href="../login/login.html">Login</a>
+            </form>
+        </div>
+        <img src="../image/close.png" class="close" onclick="toggle();">
+    </div>
+
     <script src="sign.js"></script>
+    <script src="toggle.js"></script>
 
 </body>
 </html>

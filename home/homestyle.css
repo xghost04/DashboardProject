@@ -37,20 +37,19 @@ header nav{
 
 header nav ul{
     position:relative;
-    display: flex;
-}
-
-header nav ul li{
     list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
 }
 
-header nav ul li a{
+header nav ul a{
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
 }
 
-header nav ul li a:hover{
+header nav ul a:hover{
     color: #ff0083;
 }
 
@@ -93,12 +92,36 @@ section .contentBx a{
     border-radius: 40px;
 }
 
-.imgBX img{
+section .contentBx a:hover{
+    color: #654e84;
+}
+
+section .contentBx ul a{
+    list-style: none;
+    text-decoration: none;
     position: relative;
-    max-width: 500px;
+    margin-top: 10px;
+    display: inline-block;
+    background: #654e84;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+section .contentBx ul a:hover{
+    color: #ff0083;
+}
+
+section .imgbox img{
+    position: relative;
+    max-width:500px;
     width: 100%;
     margin-top: 100px;
+    margin-left: 100px;
     z-index: 2;
+    transform:scale(1.5);
 }
 
 section .sci{
@@ -187,10 +210,11 @@ section .sci li a{
 
 /* Styling the footer */
 footer {
-    background-color: #333;
+    position:absolute;
     color: #fff;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
+    bottom: 10px;
   }
   
   /* Styling links in the footer */
