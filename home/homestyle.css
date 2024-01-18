@@ -11,6 +11,14 @@ body{
     background: #312747;
 }
 
+.danger{
+    color: #930000
+}
+
+.blue{
+    color: #fa4b4b
+}
+
 header{
     position: absolute;
     top: 0;
@@ -50,7 +58,7 @@ header nav ul a{
 }
 
 header nav ul a:hover{
-    color: #ff0083;
+    color: #fa4b4b;
 }
 
 section{
@@ -83,7 +91,7 @@ section .contentBx a{
     position: relative;
     margin-top: 10px;
     display: inline-block;
-    background: #ff0083;
+    background: #fa4b4b;
     color: #fff;
     font-size: 20px;
     letter-spacing: 2px;
@@ -92,8 +100,20 @@ section .contentBx a{
     border-radius: 40px;
 }
 
+section .contentBx nav a{
+    position: relative;
+    margin-top:10px;
+    background: #707070;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 8px 8px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
 section .contentBx a:hover{
-    color: #654e84;
+    color: #282828;
 }
 
 section .contentBx ul a{
@@ -111,7 +131,7 @@ section .contentBx ul a{
 }
 
 section .contentBx ul a:hover{
-    color: #ff0083;
+    color: #fa4b4b;
 }
 
 section .imgbox img{
@@ -192,8 +212,8 @@ section .sci li a{
     outline: none;
     width: 140px;
     color: #fff;
-    background: #ff0083;
-    border: 1px solid #ff0083;
+    background: #fa4b4b;
+    border: 1px solid #fa4b4b;
     letter-spacing: 2px;
     box-sizing: border-box;
     cursor: pointer;
@@ -260,7 +280,7 @@ footer {
         position: relative;
         margin-top: 10px;
         display: inline-block;
-        background: #ff0083;
+        background: #fa4b4b;
         color: #fff;
         font-size: 16px;
         letter-spacing: 2px;

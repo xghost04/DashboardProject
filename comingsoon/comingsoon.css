@@ -11,6 +11,10 @@ body{
     background: #312747;
 }
 
+.danger{
+    color:#930000;
+}
+
 header{
     position: absolute;
     top: 0;
@@ -51,7 +55,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color: #ff0083;
+    color: #fa4b4b;
 }
 
 section{
@@ -97,7 +101,7 @@ section .contentBx .countdown .time{
     font-weight: 700;
     padding: 10px 5px 15px;
     border-radius: 4px;
-    color: #ff0083;
+    color: #fa4b4b;
 }
 
 section .contentBx .countdown .time span{
@@ -111,7 +115,7 @@ section .contentBx a{
     position: relative;
     margin-top: 10px;
     display: inline-block;
-    background: #ff0083;
+    background: #fa4b4b;
     color: #fff;
     font-size: 20px;
     letter-spacing: 2px;
@@ -120,12 +124,14 @@ section .contentBx a{
     border-radius: 40px;
 }
 
-section .imgBX img{
+section .imgbox img{
     position: relative;
     max-width: 500px;
     width: 100%;
     margin-top: 100px;
+    margin-left: 100px;
     z-index: 2;
+    transform:scale(1.4);
 }
 
 section .sci{
@@ -196,8 +202,8 @@ section .sci li a{
     outline: none;
     width: 140px;
     color: #fff;
-    background: #ff0083;
-    border: 1px solid #ff0083;
+    background: #fa4b4b;
+    border: 1px solid #fa4b4b;
     letter-spacing: 2px;
     box-sizing: border-box;
     cursor: pointer;
@@ -256,7 +262,7 @@ section .sci li a{
         position: relative;
         margin-top: 10px;
         display: inline-block;
-        background: #ff0083;
+        background: #fa4b4b;
         color: #fff;
         font-size: 16px;
         letter-spacing: 2px;
